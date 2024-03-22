@@ -20,7 +20,9 @@ while(i <= 100):
   i += 1
 ```
 
-```Mermaid
+```mermaid
+
+flowchart TD
  B(Inicio)
  B --> C[Numero i]
  C --> D[Ingresar un numero entero]
@@ -31,5 +33,6 @@ while(i <= 100):
  G -->|No|K[Terminar]
  h --> J[i += 1]
  J-->G
+
 ```
  
