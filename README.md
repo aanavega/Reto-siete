@@ -21,18 +21,25 @@ while(i <= 100):
 ```
 
 ```mermaid
-
 flowchart TD
- B(Inicio)
- B --> C[Numero i]
- C --> D[Ingresar un numero entero]
+   B(Inicio)
+   B --> C[Numero i]
+   C --> D[Ingresar un numero entero]
  
- D -->F[i = 1]
- F -->G{i <= 100?}
- G -->|Si|h[Haga i^2]
- G -->|No|K[Terminar]
- h --> J[i += 1]
- J-->G
-
+   D -->F[i = 1]
+   F -->G{i <= 100?}
+   G -->|Si|h[Haga i^2]
+   G -->|No|K[Terminar]
+   h --> J[i += 1]
+   J-->G
 ```
- 
+
+```mermaid
+flowchart TD
+    A[Inicio] -->|Ingrese un número n| B(n/2)
+    B --> C{El residuo del cociente es cero}
+    C -- Si --> D(El número es par)
+    C -- No --> E(El número es impar)
+    D --> F[Fin]
+    E --> F
+```
