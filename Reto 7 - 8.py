@@ -21,6 +21,4 @@ def numerosprimos():
         if calcularprimos(num):
             print(num)
         num += 1
-
-# Llamar funcion inicial para mostrar los numeros primos
 numerosprimos()
